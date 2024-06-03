@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.Duockhuyenmai" table="Duockhuyenmai" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maDkm" type="string">
+            <column name="MaDKM" length="5" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="khuyenMai" class="Model_Hiber.KhuyenMai" fetch="select">
+            <column name="MaKM" length="5" not-null="true" />
+        </many-to-one>
+        <many-to-one name="monan" class="Model_Hiber.Monan" fetch="select">
+            <column name="MaMon" length="5"  />
+        </many-to-one>
+        <property name="thoiGianBd" type="date">
+            <column name="ThoiGianBD" length="10" not-null="true" />
+        </property>
+        <property name="thoigianKt" type="date">
+            <column name="ThoigianKT" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

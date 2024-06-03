@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Duockhuyenmai.hbm.xml</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmNone.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_Loai.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_NhanVien.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmMenu.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/HoaDon.hbm.xml</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmKhachHang.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmChuyenBan.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model/ThongKe.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Hoadonnhap.hbm.xml</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Nguyenlieu.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_ThongKe.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/KhuyenMai.hbm.xml</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/KhuyenMai.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/KhachHang.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Duockhuyenmai.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmDatBan.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Cthd.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/DatBan.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmNhapHang.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_Menu.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmHoaDon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model/PhanQuyenNV.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmNhanVien.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model/ThongKe1.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/NhanVien.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmThucDon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Cthd.hbm.xml</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_NhapHang.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/depositphotos_41833689-stock-illustration-seamless-food-background.jpg</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmTrangChu.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmDangNhap.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Hoadonnhap.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmThemNL.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmBieuDoTron.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/Monan.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model/ThongTin_HD.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_BanAn.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model/TrangThai_Dat.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_KhachHang.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmGhepBan.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/DangNhap.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/HoaDon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/DAL/dal_HoaDon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmGoiMon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmFixHoaDon.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/BanAn.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/View/frmTrangThai_Dat.java</file>
+            <file>file:/C:/Users/admin/Documents/Zoom/BaoCaoCongNgheJava_DeTai12/src/Model_Hiber/KhachHang.hbm.xml</file>
+        </group>
+    </open-files>
+</project-private>

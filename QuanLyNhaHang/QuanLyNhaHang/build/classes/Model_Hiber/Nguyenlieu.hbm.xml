@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.Nguyenlieu" table="NGUYENLIEU" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maNl" type="string">
+            <column name="MaNL" length="5" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="nhacungcap" class="Model_Hiber.Nhacungcap" fetch="select">
+            <column name="MaNCC" length="5" not-null="true" />
+        </many-to-one>
+        <property name="tenNl" type="string">
+            <column name="TenNL" not-null="true" />
+        </property>
+        <property name="donVi" type="string">
+            <column name="DonVi" not-null="true" />
+        </property>
+        <property name="donGia" type="big_decimal">
+            <column name="DonGia" scale="4" not-null="true" />
+        </property>
+        <property name="soLuong" type="int">
+            <column name="SoLuong" not-null="true" />
+        </property>
+        <set name="chitiethoadonnhaps" table="CHITIETHOADONNHAP" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaNL" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Chitiethoadonnhap" />
+        </set>
+    </class>
+</hibernate-mapping>

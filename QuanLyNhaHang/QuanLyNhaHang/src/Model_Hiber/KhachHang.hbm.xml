@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.KhachHang" table="KhachHang" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maKh" type="string">
+            <column name="MaKH" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenKh" type="string">
+            <column name="TenKH" not-null="true" />
+        </property>
+        <property name="sdt" type="string">
+            <column name="SDT" length="20" not-null="true" />
+        </property>
+        <set name="datBans" table="DatBan" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaKH" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.DatBan" />
+        </set>
+    </class>
+</hibernate-mapping>

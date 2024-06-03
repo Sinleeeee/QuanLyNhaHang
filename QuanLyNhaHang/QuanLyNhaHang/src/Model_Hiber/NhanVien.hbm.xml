@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.NhanVien" table="NhanVien" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maNv" type="string">
+            <column name="MaNV" length="5" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="dangNhap" class="Model_Hiber.DangNhap" fetch="select">
+            <column name="MaDangNhap" not-null="true" />
+        </many-to-one>
+        <property name="hoTen" type="string">
+            <column name="HoTen" not-null="true" />
+        </property>
+        <property name="sdt" type="string">
+            <column name="SDT" length="15" not-null="true" />
+        </property>
+        <property name="cccd" type="string">
+            <column name="CCCD" length="20" not-null="true" />
+        </property>
+        <set name="hoaDons" table="HoaDon" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaNV" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.HoaDon" />
+        </set>
+        <set name="hoadonnhaps" table="HOADONNHAP" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaNV" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Hoadonnhap" />
+        </set>
+    </class>
+</hibernate-mapping>

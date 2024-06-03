@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.HoaDon" table="HoaDon" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maHd" type="string">
+            <column name="MaHD" length="5" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="banAn" class="Model_Hiber.BanAn" fetch="select">
+            <column name="MaBan" length="15" not-null="true" />
+        </many-to-one>
+        <many-to-one name="nhanVien" class="Model_Hiber.NhanVien" fetch="select">
+            <column name="MaNV" length="5"  />
+        </many-to-one>
+        <property name="ngayTao" type="date">
+            <column name="NgayTao" length="10" not-null="true" />
+        </property>
+        <property name="ghiChu" type="string">
+            <column name="GhiChu" not-null="true" />
+        </property>
+        <property name="tongTien" type="big_decimal">
+            <column name="TongTien" scale="4" />
+        </property>
+        <set name="cthds" table="CTHD" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaHD" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Cthd" />
+        </set>
+    </class>
+</hibernate-mapping>

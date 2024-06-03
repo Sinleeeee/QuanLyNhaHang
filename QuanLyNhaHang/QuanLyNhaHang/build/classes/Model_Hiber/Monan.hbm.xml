@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.Monan" table="MONAN" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maMon" type="string">
+            <column name="MaMon" length="5" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="loai" class="Model_Hiber.Loai" fetch="select">
+            <column name="MaLoai" length="10" not-null="true" />
+        </many-to-one>
+        <property name="tenMonAn" type="string">
+            <column name="TenMonAn" not-null="true" />
+        </property>
+        <property name="trangThai" type="string">
+            <column name="TrangThai" length="40" not-null="true" />
+        </property>
+        <property name="donGia" type="big_decimal">
+            <column name="DonGia" scale="4" not-null="true" />
+        </property>
+        <property name="hinh" type="string">
+            <column name="Hinh" length="100" not-null="true" />
+        </property>
+        <property name="moTa" type="string">
+            <column name="MoTa" not-null="true" />
+        </property>
+        <set name="cthds" table="CTHD" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaMon" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Cthd" />
+        </set>
+        <set name="duockhuyenmais" table="Duockhuyenmai" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaMon" length="5" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Duockhuyenmai" />
+        </set>
+    </class>
+</hibernate-mapping>

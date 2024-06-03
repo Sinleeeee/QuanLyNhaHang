@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2023 8:08:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model_Hiber.Loai" table="Loai" schema="dbo" catalog="QUANLYNHAHANG_JAVA_D12" optimistic-lock="version">
+        <id name="maLoai" type="string">
+            <column name="MaLoai" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenLoai" type="string">
+            <column name="TenLoai" not-null="true" />
+        </property>
+        <set name="monans" table="MONAN" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaLoai" length="10" not-null="true" />
+            </key>
+            <one-to-many class="Model_Hiber.Monan" />
+        </set>
+    </class>
+</hibernate-mapping>
